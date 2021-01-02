@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".MainActivity">
+
+<!--    <TextView-->
+<!--        android:id="@+id/menu_textview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/items_color"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:padding="@dimen/padding"-->
+<!--        android:text="@string/menu_textview_text"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="@dimen/textsize" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/button_length"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/button_margin"
+                android:background="@color/items_color"
+                android:text="@string/button_length_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize"
+                app:backgroundTint="@empty"
+                android:onClick="launchLengthActivity"/>
+
+            <Button
+                android:id="@+id/button_weight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/button_margin"
+                android:background="@color/items_color"
+                android:text="@string/button_weight_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize"
+                app:backgroundTint="@empty" />
+
+            <Button
+                android:id="@+id/button_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/button_margin"
+                android:background="@color/items_color"
+                android:text="@string/button_time_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize"
+                app:backgroundTint="@empty" />
+
+            <Button
+                android:id="@+id/button_temp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/button_margin"
+                android:background="@color/items_color"
+                android:text="@string/button_temp_txt"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize"
+                app:backgroundTint="@empty" />
+
+            <Button
+                android:id="@+id/button_area"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/button_margin"
+                android:background="@color/items_color"
+                android:text="@string/button_area_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize"
+                app:backgroundTint="@empty" />
+
+            <Button
+                android:id="@+id/button_vol"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/button_margin"
+                android:background="@color/items_color"
+                android:text="@string/button_vol_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize"
+                app:backgroundTint="@empty" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

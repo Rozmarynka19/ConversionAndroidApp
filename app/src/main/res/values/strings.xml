@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Konwerter jednostek</string>
+    <string name="button_length_text">Długość</string>
+    <string name="menu_textview_text">Menu</string>
+    <string name="button_weight_text">Masa</string>
+    <string name="button_time_text">Czas</string>
+    <string name="button_temp_txt">Temperatura</string>
+    <string name="button_area_text">Obszar</string>
+    <string name="button_vol_text">Objętość</string>
+    <string name="recalculate_button_text">Przelicz!</string>
+    <string name="output_TextView_text">Tu pojawi się wynik</string>
+    <string name="input_TextEdit_text">Wprowadź wartość</string>
+    <string-array name="length_units">
+        <item>kilometry [km]</item>
+        <item>metry [m]</item>
+        <item>decymetry [dm]</item>
+        <item>centymetry [cm]</item>
+        <item>milimetry [mm]</item>
+    </string-array>
+</resources>

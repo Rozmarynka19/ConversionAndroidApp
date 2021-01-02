@@ -4,10 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
-import android.inputmethodservice.Keyboard;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
@@ -16,31 +13,31 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class LengthActivity extends AppCompatActivity  {
+public class AreaActivity extends AppCompatActivity {
 
     com.example.conversion.InputSpinnerClass inputSpinnerClass = new InputSpinnerClass();
     com.example.conversion.OutputSpinnerClass outputSpinnerClass = new OutputSpinnerClass();
     String[] stringArray;
-    double[] unitMultipliers = {1000,1,0.1,0.01,0.001};
+    double[] unitMultipliers = {1000000,10000,100,1,0.01,0.0001,0.000001};
     TextView outputTextView;
     EditText inputEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_length);
+        setContentView(R.layout.activity_area);
 
         Spinner inputSpinner = (Spinner) findViewById(R.id.fromUnit_spinner);
         Spinner outputSpinner = (Spinner) findViewById(R.id.toUnit_spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.length_units, android.R.layout.simple_spinner_item);
+                R.array.area_units, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         inputSpinner.setAdapter(adapter);
         outputSpinner.setAdapter(adapter);
         inputSpinner.setOnItemSelectedListener(inputSpinnerClass);
         outputSpinner.setOnItemSelectedListener(outputSpinnerClass);
 
-        stringArray = getResources().getStringArray(R.array.length_units);
+        stringArray = getResources().getStringArray(R.array.area_units);
         outputTextView = (TextView) findViewById(R.id.output_TextView);
 
         inputEditText = findViewById(R.id.input_TextEdit);
@@ -80,7 +77,5 @@ public class LengthActivity extends AppCompatActivity  {
         }
 
         outputTextView.setText(String.valueOf(result));
-//        Log.d("recalculate","here!");
     }
-
 }

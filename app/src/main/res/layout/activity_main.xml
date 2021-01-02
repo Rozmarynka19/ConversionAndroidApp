@@ -51,7 +51,8 @@
                 android:text="@string/button_weight_text"
                 android:textColor="@color/black"
                 android:textSize="@dimen/textsize"
-                app:backgroundTint="@empty" />
+                app:backgroundTint="@empty"
+                android:onClick="launchWeightActivity"/>
 
             <Button
                 android:id="@+id/button_time"
@@ -62,7 +63,8 @@
                 android:text="@string/button_time_text"
                 android:textColor="@color/black"
                 android:textSize="@dimen/textsize"
-                app:backgroundTint="@empty" />
+                app:backgroundTint="@empty"
+                android:onClick="launchTimeActivity"/>
 
             <Button
                 android:id="@+id/button_temp"
@@ -73,7 +75,8 @@
                 android:text="@string/button_temp_txt"
                 android:textColor="@color/black"
                 android:textSize="@dimen/textsize"
-                app:backgroundTint="@empty" />
+                app:backgroundTint="@empty"
+                android:onClick="launchTempActivity"/>
 
             <Button
                 android:id="@+id/button_area"
@@ -84,7 +87,8 @@
                 android:text="@string/button_area_text"
                 android:textColor="@color/black"
                 android:textSize="@dimen/textsize"
-                app:backgroundTint="@empty" />
+                app:backgroundTint="@empty"
+                android:onClick="launchAreaActivity"/>
 
             <Button
                 android:id="@+id/button_vol"
@@ -95,7 +99,8 @@
                 android:text="@string/button_vol_text"
                 android:textColor="@color/black"
                 android:textSize="@dimen/textsize"
-                app:backgroundTint="@empty" />
+                app:backgroundTint="@empty"
+                android:onClick="launchVolActivity"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

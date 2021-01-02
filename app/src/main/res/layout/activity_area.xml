@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LengthActivity"
+    tools:context=".AreaActivity"
     android:background="@color/bg_color">
 
     <EditText
@@ -17,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:hint="@string/input_TextEdit_text" />
+        android:hint="@string/input_TextEdit_text"/>
 
     <TextView
         android:id="@+id/output_TextView"

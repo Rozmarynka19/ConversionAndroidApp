@@ -10,11 +10,45 @@
     <string name="recalculate_button_text">Przelicz!</string>
     <string name="output_TextView_text">Tu pojawi się wynik</string>
     <string name="input_TextEdit_text">Wprowadź wartość</string>
+    <string name="inputTextEdit_toast_message">Wprowadź wartość!</string>
     <string-array name="length_units">
         <item>kilometry [km]</item>
         <item>metry [m]</item>
         <item>decymetry [dm]</item>
         <item>centymetry [cm]</item>
         <item>milimetry [mm]</item>
+    </string-array>
+    <string-array name="weight_units">
+        <item>tona [t]</item>
+        <item>kilogramy [kg]</item>
+        <item>dekagramy [dag]</item>
+        <item>gramy [g]</item>
+        <item>miligramy [mg]</item>
+    </string-array>
+    <string-array name="time_units">
+        <item>doba [24h]</item>
+        <item>godzina [h]</item>
+        <item>minuty [min]</item>
+        <item>sekundy [s]</item>
+    </string-array>
+    <string-array name="temp_units">
+        <item>Kelwin [K]</item>
+        <item>Celsjusz [C]</item>
+        <item>Fahrenheit [F]</item>
+    </string-array>
+    <string-array name="area_units">
+        <item>kilometry kw. [km2]</item>
+        <item>hektar [ha]</item>
+        <item>ar [a]</item>
+        <item>metry kw. [m2]</item>
+        <item>decymetry kw. [dm2]</item>
+        <item>centymetry kw. [cm2]</item>
+        <item>milimetry kw. [mm2]</item>
+    </string-array>
+    <string-array name="vol_units">
+        <item>kilometr sześcienny [km3]</item>
+        <item>metr sześcienny [m3]</item>
+        <item>litr [l]</item>
+        <item>mililitr [ml]</item>
     </string-array>
 </resources>
